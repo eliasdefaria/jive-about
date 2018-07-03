@@ -1,0 +1,19 @@
+{
+  "name": "jive-about",
+  "version": "1.0.0",
+  "description": "This will be a node app for the Jive About Us page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasdefaria/jive-about.git"
+  },
+  "author": "Elias deFaria, Marisa Ling, and Marko Sevo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliasdefaria/jive-about/issues"
+  },
+  "homepage": "https://github.com/eliasdefaria/jive-about#readme"
+}
