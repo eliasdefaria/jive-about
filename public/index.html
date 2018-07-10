@@ -19,6 +19,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css">
 </head>
 <body>
+  <script type="text/javascript" src = "js/countdown.js"></script>
+  <script type="text/javascript">
+    if(screen.width < 700){
+      document.location = "home-mobile.html";
+    }
+    countdownTimer();
+  </script>
   <div id="fullpage" class="fullpage">
     <div class="section">
       <div class="html-embed-2 w-embed w-iframe w-script" style="text-align: center;">
@@ -39,9 +46,9 @@
         </div>
 
         <head>
-          <iframe src="http://alpha.editor.p5js.org/embed/B134Yk_M7" style="height:100vh; width:100vw; border: none; margin-bottom: -6px;" scrolling="no"></iframe>
-          <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
-          <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+          <iframe src="https://alpha.editor.p5js.org/embed/B134Yk_M7" style="height:100vh; width:100vw; border: none; margin-bottom: -6px;" scrolling="no"></iframe>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
           <style type="text/css"></style>
         </head>
         <!--script>
@@ -79,13 +86,15 @@
           </div>
           <div class="w-col w-col-6">
             <div>
-              <p class="paragraph-3" data-ix="move-left-fade-in">Think of Jive as an electric amp. We want to use technology to get your music heard. We are a tool for musicians who have a message, sound, or unique style that they want people to hear. We are also a tool for music fans who want to discover their new favorite artist, or see their current one play live online. We are here to meet your music needs by providing an online platform for live music.</p>
-              <h1 class="heading-5" data-ix="move-up-fade-in">Sign up for our newsletter. Or else.</h1>
+              <p class="paragraph-3" data-ix="move-left-fade-in">Think of Jive as an electric amp. We want to use technology to get your music heard. We are a tool for musicians who have a message, sound, or unique style that they want people to hear. We are also a tool for music fans who want to discover new artists, or see the ones they already know play live online. We are here to meet your music needs by providing an online platform where musicians can livestream performances and receive feedback and donations from viewers.</p>
+              <div id="headingTextBackground">
+                <h1 class="heading-5" data-ix="move-up-fade-in" id="headingText">Sign up for our newsletter. Or else :)</h1>
+              </div>
               <div class="w-form">
-                <form id="email-form" name="email-form" data-name="Email Form" data-ix="move-up-fade-in-2" action="/" method="post">
+                <form id="email-form" name="email-form" data-name="Email Form" data-ix="move-up-fade-in-2" onSubmit="submitForm()">
                   <input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Name" id="name">
                   <input type="text" class="text-field-2 w-input" maxlength="256" name="email" data-name="Email" placeholder="Email Address" id="email" required>
-                  <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button">
+                  <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button" id="submitButton">
                 </form>
               </div>
             </div>
@@ -113,7 +122,7 @@
       <div class="portraits">
         <div>
           <h1 class="heading-6" data-ix="move-up-fade-in-portraits-title">Meet the team. </h1>
-          <p class="paragraph-4" data-ix="move-up-fade-in-portraits-title-2">The Jive team is comprised of six undergraduates at UCLA and USC with majors ranging from STEM to the fine arts. Our mutual love of music drove us to befriend our collegiate rivals, and “band” together to create Jive. Jive is currently working toward launching our site ASAP. We are grinding every week at the Startup UCLA office, where we have been selected along with eight other student start ups for the Summer Accelerator program. <br></p>
+          <p class="paragraph-4" data-ix="move-up-fade-in-portraits-title-2"><br></p>
         </div>
         <div class="portrait-row w-row">
           <div class="w-col w-col-4" data-ix="move-up-fade-in">
@@ -158,7 +167,7 @@
               <div data-w-id="224ff934-26b2-4b7f-b308-b0082d710a4f" class="image3 john3"></div>
               <div class="label">
                 <h1 class="name">John Depriest</h1>
-                <h1 class="title">CMO / The Millenial Stereotype</h1>
+                <h1 class="title">CMO / The Millennial Stereotype</h1>
               </div>
             </div>
           </div>
@@ -252,7 +261,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
-  <script type="text/javascript" src = "js/countdown.js"></script>
+
   <script type="text/javascript">
     $("#scrollButton").click(function() {
       $('html,body').animate({
