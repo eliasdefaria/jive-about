@@ -52,12 +52,13 @@ function submitForm(){
   //let formData = new FormData(document.querySelector("#email-form"));
   http.setRequestHeader("Content-Type", "application/json");
   // Define what happens on successful data submission
-  http.addEventListener("load", function(event) {
+  //http.addEventListener("load", function(event) {
+    console.log("YO!")
     document.querySelector("#email-form").style.visibility = "hidden";
     document.querySelector("#headingText").style.fontSize = "2px;";
     document.querySelector("#headingText").innerHTML = "Thank you for your submission. See you soon on Jive!";
     document.querySelector("#headingTextBackground").style.backgroundColor = "#ee2b7a";
-  });
+  //});
 
   let name = document.querySelector("#name").value;
   let email = document.querySelector("#email").value;

@@ -18,6 +18,8 @@
   "homepage": "https://github.com/eliasdefaria/jive-about#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "knex": "^0.15.2",
+    "pg": "^7.4.3"
   }
 }
