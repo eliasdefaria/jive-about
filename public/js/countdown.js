@@ -40,7 +40,8 @@ function countdownTimer(){
     }
     if (timeLeft < 0){
       clearInterval(x);
-      document.querySelector("#countdown").innerHTML = "BETA LAUNCHED! Tune in @ jive.live";
+      document.querySelector(".landingText").innerHTML = "Jive is Live!";
+      document.querySelector("#rsvpButton").value = "Check out the site"
 
     }
   }, 1000);
