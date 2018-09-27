@@ -1,4 +1,4 @@
-function countdownTimer(){
+/*function countdownTimer(){
   const releaseTime = new Date("july 27, 2018 17:00:00").getTime();
   var x = setInterval(function(){
     var currentTime = new Date().getTime();
@@ -45,7 +45,7 @@ function countdownTimer(){
 
     }
   }, 1000);
-};
+};*/
 
 function submitForm(){
   let http = new XMLHttpRequest();

@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const port = 8080;
 const fs = require('fs');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 
 var knex = require('knex')({
   client: 'pg',
